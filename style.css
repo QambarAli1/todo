@@ -1,0 +1,81 @@
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+#todoList div{
+    display: flex;
+    flex-direction: row;
+}
+.todo-container{
+    padding: 50px;
+    width: 70%;
+}
+.todo-container h1{
+    font-weight: bold;
+    font-family: monospace;
+    /* margin-left: 80px; */
+}
+.todo-container input{
+    width: 90% !important;
+    border: none;
+    border-bottom: 2px solid rgb(19, 31, 201) !important;
+}
+.todo-container input:focus{
+    border: none !important;
+}
+.textOfTodo{
+    width: 70% !important;
+    font-size: 23px !important;
+    overflow: auto;
+}
+.iconsofTodo{
+    width: 30% !important;
+}
+.todos i{
+    font-size: 30px;
+    margin-left: 20px;
+    color: rgb(71, 125, 226);
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .todo-container{
+        border-color: blue;
+        width: 100%;
+        padding: 10px;
+    }
+    .todos i{
+        margin-right: 10px;
+        font-size: 23px !important;
+    }
+    
+  }
+
+  
+@media only screen and (min-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .todo-container{
+        border-color: blue;
+        width: 100%;
+        padding-left: 300px;
+    }
+    .todos i{
+        margin-right: 10px;
+        font-size: 23px !important;
+    }
+    .todo-container input{
+        width: 60% !important;
+    }
+    #todoList{
+        width: 70%;
+
+    }
+    
+  }
+
